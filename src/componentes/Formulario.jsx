@@ -12,7 +12,7 @@ function Formulario() {
     const [icono, setIcono]= useState()
 
       useEffect(() => {
-      fetch('./src/data/clima.json')
+      fetch('./clima.json')
         .then(response => response.json())
         .then((json) => {setData(json)})
         .catch(error => console.error(error))
